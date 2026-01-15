@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LazyFoxTrader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a3269d77b5f8afd2fd608d61fb584751ffb2591")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+143f6ee313a8f4893bb3434ea73174d2987caac1")]
 [assembly: System.Reflection.AssemblyProductAttribute("LazyFoxTrader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LazyFoxTrader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
