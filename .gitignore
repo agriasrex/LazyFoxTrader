@@ -4,3 +4,5 @@
 
 /.vs
 /LazyFoxTrader/.vs/LazyFoxTrader/FileContentIndex
+/LazyFoxTrader/obj/Debug/net8.0/LazyFoxTrader.AssemblyInfo.cs
+/LazyFoxTrader/obj/Debug/net8.0/LazyFoxTrader.AssemblyInfoInputs.cache
