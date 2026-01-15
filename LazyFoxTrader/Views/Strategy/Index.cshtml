@@ -1,0 +1,20 @@
+﻿<h2>Strategy Builder</h2>
+
+<textarea id="code" class="form-control mb-3" rows="12">
+bool Buy(List<Trade> bars) => RSI(bars) &lt; 30;
+bool Sell(List<Trade> bars) => RSI(bars) &gt; 70;
+</textarea>
+
+<button class="btn btn-primary" onclick="compile()">Compile</button>
+
+<script>
+    function compile() {
+        fetch('/Strategy/Compile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'code=' + encodeURIComponent(code.value)
+        })
+        .then(r => r.json())
+        .then(r => alert(r.success ? 'Compiled!' : r.errors.join()));
+    }
+</script>

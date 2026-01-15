@@ -1,0 +1,19 @@
+﻿<h2>Backtests</h2>
+
+<div class="card p-3 shadow">
+    <input class="form-control mb-2" placeholder="Backtest Name" id="name" />
+    <input class="form-control mb-2" placeholder="Starting Capital" id="capital" />
+    <textarea class="form-control mb-2" placeholder="Strategy Code" id="code"></textarea>
+
+    <button class="btn btn-success" onclick="run()">Run Backtest</button>
+</div>
+
+<script>
+    function run() {
+        fetch('/Backtest/Run', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `name=${name.value}&capital=${capital.value}&strategyCode=${code.value}`
+        });
+    }
+</script>
